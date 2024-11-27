@@ -209,16 +209,16 @@ void showCards(const std::vector<Card>& arr, bool dealerFirst) {
 
     for (i = 0; i < n; i++) {
         switch (arr[i].getSymbol()) {
-        case spades: std::cout << "#♠****# ";
+        case spades: std::cout << "#♠    # ";
             break;
         
-        case heart: std::cout << "#♥****# ";
+        case heart: std::cout << "#♥    # ";
             break;
         
-        case diamond: std::cout << "#♦****# ";
+        case diamond: std::cout << "#♦    # ";
             break;
         
-        case clover: std::cout << "#♣****# ";
+        case clover: std::cout << "#♣    # ";
             break;
         
         default:
@@ -233,7 +233,7 @@ void showCards(const std::vector<Card>& arr, bool dealerFirst) {
 
 
     for (i = 0; i < n; i++) {
-        std::cout << "#*****# ";
+        std::cout << "#     # ";
     }
     if (dealerFirst) {
         std::cout << "#######";
@@ -257,7 +257,7 @@ void showCards(const std::vector<Card>& arr, bool dealerFirst) {
                 break;
                 
         }
-        std::cout << "#**" << symbol << "**# ";
+        std::cout << "#  " << symbol << "  # ";
     }
     if (dealerFirst) {
         std::cout << "#######";
@@ -265,7 +265,7 @@ void showCards(const std::vector<Card>& arr, bool dealerFirst) {
     std::cout << "\n";
 
     for (i = 0; i < n; i++) {
-        std::cout << "#*****# ";
+        std::cout << "#     # ";
     }
     if (dealerFirst) {
         std::cout << "#######";
@@ -274,16 +274,16 @@ void showCards(const std::vector<Card>& arr, bool dealerFirst) {
 
     for (i = 0; i < n; i++) {
         switch (arr[i].getSymbol()) {
-        case spades: std::cout << "#****♠# ";
+        case spades: std::cout << "#    ♠# ";
             break;
         
-        case heart: std::cout << "#****♥# ";
+        case heart: std::cout << "#    ♥# ";
             break;
         
-        case diamond: std::cout << "#****♦# ";
+        case diamond: std::cout << "#    ♦# ";
             break;
         
-        case clover: std::cout << "#****♣# ";
+        case clover: std::cout << "#    ♣# ";
             break;
         
         default:
