@@ -183,6 +183,9 @@ while (balance > 0):
             else:
                 print("You won!")
                 balance += bet * 2
+        else:
+            print("Push")
+            balance += bet
     elif playerCount < 21:
         if (playerCount > dealerCount):
             print("You won!")
