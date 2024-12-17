@@ -136,7 +136,10 @@ int main() {
                     std::cout << "You won!\n";
                     balance += bet * 2;
                 }
-            }
+            } else {
+				std::cout << "Push\n";
+				balance += bet;
+			}
         } else if (playerCount < 21) {
             if (playerCount > dealerCount) {
                 std::cout << "You won!\n";
